@@ -12,7 +12,8 @@ public class memberDTO {
 	private String email;
 	private String pin;
 	private String name;
-	private String tel;	
+	private String tel;
+	private String id;	
 }
 
 

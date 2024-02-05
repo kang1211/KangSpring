@@ -40,11 +40,6 @@ public class MainController {
 		ModelAndView mv = new ModelAndView("signin");
 		return mv;
 	}
-	@GetMapping("/update")
-	public ModelAndView update() {
-		ModelAndView mv = new ModelAndView("update");
-		return mv;
-	}
 	
 	@PostMapping("/signin")
 	public ModelAndView signin(@RequestParam Map<String, String> param, 
@@ -72,11 +67,16 @@ public class MainController {
 		return mv;
 	}
 	
-	@PostMapping("/update/Enroll")
-	public ModelAndView updateEnroll(@ModelAttribute memberDTO memberdto) {
-		
-		ModelAndView mv = new ModelAndView("index");
-		memberService.change(memberdto);
+	@GetMapping("/update")
+	public ModelAndView update() {
+		ModelAndView mv = new ModelAndView("update");
+		return mv;
+	}
+	
+	@PostMapping("/update")
+	public ModelAndView update(@RequestParam Map<String, String> pm) {
+		ModelAndView mv = new ModelAndView("signin");
+		memberService.update(pm);
 		return mv;
 	}
 	
