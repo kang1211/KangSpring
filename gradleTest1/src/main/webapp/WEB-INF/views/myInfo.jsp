@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>input3</title>
+<title>myInfo</title>
 </head>
 <body>
-	<h2> input3.jsp </h2>
-	${person.myId } <br> ${person.myName }
+	<h2> myInfo.jsp </h2>
+	이름 : ${myInfoDTO.myName } <br>
+    나이 : ${myAge } <br>
+	직업 : ${myInfoDTO.myJob }
 </body>
 </html>

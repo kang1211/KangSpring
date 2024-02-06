@@ -23,6 +23,9 @@ dependencies {
 	implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper'
 	implementation group: 'javax.servlet', name: 'jstl'
 	compileOnly group: 'org.projectlombok', name: 'lombok'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation'
+    
 	
 	
 }

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>input3</title>
+<title>요청에 의한 데이터 처리</title>
 </head>
 <body>
-	<h2> input3.jsp </h2>
-	${person.myId } <br> ${person.myName }
+	<h2> input4.jsp </h2>
+	${id } <br> ${name }
 </body>
 </html>
