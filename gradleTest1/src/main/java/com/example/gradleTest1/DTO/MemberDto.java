@@ -15,10 +15,10 @@ public class MemberDto {
 	@Email
 	private String email;
 	
-	@NotNull(message="name is not input")
+	@NotBlank(message="이름이 공란입니다")
 	private String name;
 	
-	@NotBlank
+	@NotBlank(message="비밀번호를 입력하세요")
 	@Size(min = 6, message="최소 6자리 이상")
 	@Size(max = 12, message="최대 12자리")
 	private String password;
@@ -29,7 +29,7 @@ public class MemberDto {
 	
 	private String state;
 	
-	@Digits(integer=5, fraction=0, message="우편번호 자릿수가 올바르않습다.")
+	@Digits(integer=5, fraction=0, message="우편번호 자릿수가 올바르않습다.5자리")
 	private String zipCode;
 }
 
